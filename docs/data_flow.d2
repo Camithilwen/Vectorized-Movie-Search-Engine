@@ -1,0 +1,23 @@
+direction: down
+dataset: Wikipedia Reference Data
+dataset.shape: rectangle
+pp: Preprocessing Functions
+pp.shape: circle
+user: User
+user.shape: square
+se: Search Engine
+se.shape: circle
+em: Embeddings Model
+em.shape: circle
+vdb: Vectorized Movie Database
+vdb.shape: rectangle
+dataset -> pp: Dataset
+pp -> em: Processed Reference Data
+em -> vdb: Vectorized Reference Data
+user -> se: Movie title or keywords
+user <- se: Movie recommendations
+se -> pp: Structured Input Data
+pp -> em: Processed Input Data
+se <- em: Vectorized Input Data
+se -> vdb: KNN Search
+se <- vdb: Search Returns

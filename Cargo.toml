@@ -1,0 +1,8 @@
+[package]
+name = "Vectorized-Movie-Search-Engine"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+pandrs = "0.1.0-alpha.1"
+qdrant-client = "1.13.0"
