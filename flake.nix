@@ -20,6 +20,10 @@
             pkg-config
             fontconfig
             openssl
+            faiss
+            (python3.withPackages (py: [
+              py.torch py.colbert-ai py.onnx py.faiss py.transformers
+            ]))
           ];
         };
 

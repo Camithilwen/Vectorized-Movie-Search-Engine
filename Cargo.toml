@@ -4,5 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
-pandrs = "0.1.0-alpha.1"
+embed_anything = { version = "0.5.5", features = ["ort"] }
+fastembed = "4.8.0"
+futures = "0.3.31"
+polars = "0.46.0"
+polars-lazy = "0.46.0"
 qdrant-client = "1.13.0"
+serde_json = "1.0.140"
+tokio = "1.44.2"
